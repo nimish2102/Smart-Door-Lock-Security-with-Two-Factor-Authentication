@@ -32,13 +32,13 @@ class Fullscreen_Window:
 	global dbPass
 	
 	dbHost = 'localhost'
-	dbName = 'DB_NAME'
-	dbUser = 'USER'
-	dbPass = 'PASSWORD'
+	dbName = 'door_lock'
+	dbUser = 'phpmyadmin'
+	dbPass = 'password'
 	
 	def __init__(self):
 		self.tk = tk.Tk()
-		self.tk.title("Three-Factor Authentication Security Door Lock")
+		self.tk.title("Smart Door Lock Security with Two Factor Authentication")
 		self.frame = tk.Frame(self.tk)
 		self.frame.grid()
 		self.tk.columnconfigure(0, weight=1)
